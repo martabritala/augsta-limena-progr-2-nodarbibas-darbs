@@ -1,5 +1,5 @@
 import pytest
-from src.temperatura_FuzC import FtoC(x)
+from src.temperatura_FuzC import FtoC
 
 def test_temperatura_viszemaka():
     assert FtoC(500)==-273.15
