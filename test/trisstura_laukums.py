@@ -1,3 +1,12 @@
+import pytest
+from src.trisstura_laukums import trissturi
+
+def h():
+    assert trissturis([1,3,5])==1
+    
+def p():
+    assert trissturis([100,3,70])==2
+
 """
 B. Trijstūra laukums
 Funkcija akceptē divus argumentus - trisjtūra augstumu un pamatu,
@@ -18,6 +27,3 @@ def trissturis(p, h):
     return laukums
 
 """
-def trissturis(p, h):
-
-    return 0
