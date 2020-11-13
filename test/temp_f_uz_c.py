@@ -2,7 +2,7 @@ import pytest
 from src.temperatura_FuzC import temperatura_FuzC
 
 def test_temperatura_viszemaka():
-    assert temperatura_FuzC(-500)==-273.15
+    assert temperatura_FuzC(-501)==-273.15
     
 def test_temperatura_norm():
     assert temperatura_FuzC(32)==0
