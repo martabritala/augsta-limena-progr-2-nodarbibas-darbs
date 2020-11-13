@@ -1,11 +1,11 @@
 import pytest
-from src.temperatura_FuzC import temperatura_FuzC
+from src.temperatura_FuzC import FtoC(x)
 
 def test_temperatura_viszemaka():
-    assert temperatura_FuzC(-8740.8)==-273.15
+    assert FtoC(500)==-273.15
     
 def test_temperatura_norm():
-    assert temperatura_FuzC(32)==0
+    assert FtoC(32)==0
 
 """
 D. Temperatūras pārveidošana F->C
