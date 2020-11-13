@@ -1,5 +1,5 @@
 def FtoC (x):
-    return (x - 32) * 5 / 9
-temperature = float(input("Ievadi temperaturu Fahrenheita grados:"))
-celsijs =FtoC (temperature)
-print("Temperatura Celsija: " , celsijs)
+    rez = (x - 32) * 5 / 9
+    if rez <= -273.15:
+        rez = -273.15
+    return rez
