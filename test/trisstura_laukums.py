@@ -1,11 +1,14 @@
 import pytest
 from src.trisstura_laukums import trissturi
 
-def h():
-    assert trissturis([1,3,5])==1
-    
-def p():
-    assert trissturis([100,3,70])==2
+def test_vesel_pozitivi():
+    assert trissturi(2, 3) == 2
+
+def test_poz_dala():
+    assert trissturi(2,4.2) == 4.2
+
+def test_abi_dalas():
+    assert trissturi(3.2,4.4)==7.04
 
 """
 B. Trijstūra laukums
